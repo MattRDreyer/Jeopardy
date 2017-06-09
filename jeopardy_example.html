@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jeopardy</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type = "text/javascript">
+      (function(){
+
+        $.get( "http://jservice.io/api/random?count=5", function( data ) {// data is an arbitrary word, but is used below as well... word should match
+          $.each(data, function(index, value){
+//          console.log(value.question + " : " + value.answer);//how to bring question and answer
+//          console.log(value.answer);//how to bring just the value of the answer
+              $.each(value, function(key,value){
+              //  document.write(key + " : " + value + "<br>");
+              })
+          })
+
+//          console.log(data[0].category.title);  //data[0]- 1st item in array . question is question only
+        });
+
+    })();
+
+    </script>
+  </body>
+</html>

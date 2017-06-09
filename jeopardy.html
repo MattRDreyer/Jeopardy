@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Jeopardy</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/jeopardy.css">
+  <style type="text/css"></style>
+</head>
+
+<body>
+  <h1>Welcome to Jeopardy!</h1>
+
+  <div class="points">Points
+    <div id="totalpoints">0</div>
+  </div>
+  <h3>Question:</h3>
+  <p id="question">Question</p>
+
+  <h3>Category:</h3>
+  <p id="category">Category: </p>
+  <h3>Value of question:</h3>
+  <p id="value">Value: </p>
+  <!-- <h3>The answer is:</h3>
+      <p id = "answer"></p> -->
+
+  <div><textarea id="submitanswer" style="width:300px;height:30px;" placeholder="Enter your guess"></textarea></div>
+  <div><button id="makeguess">Submit Guess</button></div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javascripts/jeopardy.js"></script>
+</body>
+
+</html>
